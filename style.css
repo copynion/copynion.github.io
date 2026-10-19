@@ -1,0 +1,44 @@
+/* 카피니언 공개 웹 — 순수 정적 CSS, 외부 폰트·스크립트 없음 */
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;min-height:100vh;color:#fff;line-height:1.7;font-size:16px;
+  font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif;
+  background:#7d8696;background:linear-gradient(160deg,#7d8696 0%,#9392a0 55%,#a69aa0 100%);background-attachment:fixed}
+a{color:inherit}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+header.top{padding:20px 0 8px}
+.logo{font-family:Georgia,"Times New Roman",serif;font-size:26px;font-weight:700;letter-spacing:.02em;color:#fff;text-decoration:none}
+nav.menu{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:8px;font-size:14px}
+nav.menu a{color:#fff;opacity:.85;text-decoration:none;padding:4px 0;border-bottom:1px solid transparent}
+nav.menu a[aria-current="page"],nav.menu a:hover{opacity:1;border-bottom-color:#fff}
+main{padding:12px 0 32px}
+h1{font-size:24px;line-height:1.35;margin:16px 0 12px}
+.card{background:rgba(255,255,255,.93);color:#22303F;border-radius:16px;padding:18px 16px;margin:14px 0;overflow-wrap:anywhere;word-break:keep-all}
+.card h1,.card h2,.card h3,.card h4{color:#22303F}
+.card h1{font-size:22px;margin-top:0}
+.card h2{font-size:19px;margin:28px 0 8px}
+.card h3{font-size:16.5px;margin:20px 0 6px}
+.card p{margin:8px 0}
+.card ul,.card ol{padding-left:22px;margin:8px 0}
+.card li>p{margin:2px 0}
+.card hr{border:0;border-top:1px solid rgba(34,48,63,.2);margin:22px 0}
+.card a{color:#22303F;text-decoration:underline}
+code{font-family:inherit;font-size:.95em;background:rgba(34,48,63,.08);padding:1px 5px;border-radius:5px}
+mark.blank,.blank{background:#F2D49B;color:#22303F;border:1px dashed #22303F;padding:1px 6px;border-radius:5px;font-weight:700;font-style:normal}
+.need{background:#F2D49B;color:#22303F;font-weight:700;border-radius:3px;padding:0 2px}
+blockquote{margin:12px 0;padding:10px 14px;background:rgba(34,48,63,.07);border-left:4px solid #22303F;border-radius:0 10px 10px 0}
+blockquote h2{margin-top:4px}
+.banner{background:#F2D49B;color:#22303F;border:2px solid #22303F;border-radius:12px;padding:12px 14px;font-weight:700;margin:14px 0}
+.banner small{display:block;font-weight:400;margin-top:2px}
+.tablewrap{overflow-x:auto;margin:10px 0;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;font-size:14px;min-width:100%}
+th,td{border:1px solid rgba(34,48,63,.3);padding:6px 8px;text-align:left;vertical-align:top;overflow-wrap:anywhere}
+th{background:rgba(34,48,63,.1);white-space:nowrap}
+.links{display:grid;gap:10px;grid-template-columns:1fr;margin:14px 0}
+.links a{display:block;background:rgba(255,255,255,.93);color:#22303F;text-decoration:none;border-radius:14px;padding:14px 16px;font-weight:700}
+.links a span{display:block;font-weight:400;font-size:14px;opacity:.8}
+.faq dt{font-weight:700;margin-top:16px}
+.faq dd{margin:4px 0 0}
+footer.bottom{padding:18px 0 40px;font-size:13px;opacity:.92}
+footer.bottom p{margin:4px 0}
+@media(min-width:600px){.links{grid-template-columns:1fr 1fr}.wrap{padding:0 24px}.card{padding:24px}}
